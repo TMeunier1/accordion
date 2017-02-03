@@ -1,89 +1,77 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+    <head>
     <meta charset="utf-8">
     <title>Youpi</title>
     <link rel="stylesheet" href="./style/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/style.css">
-</head>
-
-<body>
-    <header>
-
-        <h1>Nos Offres</h1>
-    </header>
-    <aside class="">
-        <ul>
-            <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
-        </ul>
-    </aside>
-    <main>
-
-        <section>
-
-            <i class="fa fa-address-book" aria-hidden="true"></i>
-            <h2>Site Web et E-Commerce</h2>
-            <article class="artsect1" class="cache">
-                <h3>Site Web:</h3>
-                <p class="psouligne">Boostez votre visibilité sur le web !</p>
-                <p>Hébergement et nom de domaine inclus pour 1 an</p>
-                <button type="button" name="button">à partir de 650€ HT </button>
-            </article>
-
-            <article class="artsect1" class="cache">
-                <h3>Site E-commerce:</h3>
-                <div>
-                    <p class="psouligne">Boostez vos ventes grâce à nos solutions de commerce en ligne !</p>
+    </head>
+    <body>
+        <header>
+            <h1>Nos Offres</h1>
+        </header>
+        <aside>
+            <ul>
+                <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+            </ul>
+        </aside>
+        <main>
+            <section class ="uncollapse" onclick="toggle(this)">
+                    <i class="fa fa-address-book" aria-hidden="true"></i>
+                    <h2>Site Web et E-Commerce</h2>
+                <article class="articlesection1">
+                    <h3>Site Web:</h3>
+                    <p class="psouligne">Boostez votre visibilité sur le web !</p>
                     <p>Hébergement et nom de domaine inclus pour 1 an</p>
-                    <button type="button" name="button"> Uniquement sur devis</button>
-                </div>
-            </article>
-        </section>
-
-        <section class='cache'>
-            <i class="fa fa-snowflake-o" aria-hidden="true"></i>
-            <h2></i>Application sur mesure</h2>
-            <article class="cache">
-                <p>Besoin de vous différencier, nous étudierons ensemble vos besoins afin de vous offrir une prestation personnalisée.</p>
-                <button type="button" name="button">uniquement sur devis</button>
-            </article>
-        </section>
-
-        <section class='cache'>
-            <i class="fa fa-address-book" aria-hidden="true"></i>
-            <h2>Formation</h2>
-            <article class="cache">
-                <p>Nous proposons un éventail de formations autour du numérique, afin de faciliter votre quotidien.</p>
-                <button type="button" name="button">Uniquement Sur Devis</button>
-            </article>
-        </section>
-
-        <section class='cache'>
-            <i class="fa fa-address-book" aria-hidden="true"></i>
-            <h2>Prototypage Rapide</h2>
-            <article class="cache">
-                <p>Une idée de projet, nous travaillerons ensemble à l’élaboration d’un prototype</p>
-                <button type="button" name="button">Uniquement sur devis</button>
-            </article>
-        </section>
-
-        <section class='cache'>
-            <i class="fa fa-address-book" aria-hidden="true"></i>
-            <h2>Edition logicielle</h2>
-            <article class="cache">
-                <p>Logiciel de vente aux enchères: En cours</p>
-                <p>Logiciel de gestion pour centres équestres: En cours</p>
-                <button type="button" name="button">Nous Contacter</button>
-            </article>
-        </section>
-
-    </main>
-</body>
-<script src="./script/script.js" charset="utf-8"></script>
-
+                    <button type="button" name="button">à partir de 650€ HT </button>
+                </article>
+                <article class="articlesection1">
+                    <h3>Site E-commerce:</h3>
+                    <div>
+                        <p class="psouligne">Boostez vos ventes grâce à nos solutions de commerce en ligne !</p>
+                        <p>Hébergement et nom de domaine inclus pour 1 an</p>
+                        <button type="button" name="button"> Uniquement sur devis</button>
+                    </div>
+                </article>
+            </section>
+            <section class ="collapse" onclick="toggle(this)">
+                <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                <h2></i>Application sur mesure</h2>
+                <article>
+                    <p>Besoin de vous différencier, nous étudierons ensemble vos besoins afin de vous offrir une prestation personnalisée.</p>
+                    <button type="button" name="button">uniquement sur devis</button>
+                </article>
+            </section>
+            <section class ="collapse" onclick="toggle(this)">
+                <i class="fa fa-address-book" aria-hidden="true"></i>
+                <h2>Formation</h2>
+                <article>
+                    <p>Nous proposons un éventail de formations autour du numérique, afin de faciliter votre quotidien.</p>
+                    <button type="button" name="button">Uniquement Sur Devis</button>
+                </article>
+            </section>
+            <section class ="collapse" onclick="toggle(this)">
+                <i class="fa fa-address-book" aria-hidden="true"></i>
+                <h2>Prototypage Rapide</h2>
+                <article>
+                    <p>Une idée de projet, nous travaillerons ensemble à l’élaboration d’un prototype</p>
+                    <button type="button" name="button">Uniquement sur devis</button>
+                </article>
+            </section>
+            <section class ="collapse" onclick="toggle(this)">
+                <i class="fa fa-address-book" aria-hidden="true"></i>
+                <h2>Edition logicielle</h2>
+                <article>
+                    <p>Logiciel de vente aux enchères: En cours</p>
+                    <p>Logiciel de gestion pour centres équestres: En cours</p>
+                    <button type="button" name="button">Nous Contacter</button>
+                </article>
+            </section>
+        </main>
+    </body>
+    <script src="./script/script.js" charset="utf-8"></script>
 </html>

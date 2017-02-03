@@ -14,7 +14,6 @@ header{
     margin-bottom: 5px;
 }
 
-
 h1 {
     color: #82CC29;
     padding: 1em;
@@ -50,11 +49,9 @@ ul li {
 
 }
 
-
 ul li a {
     color: white;
 }
-
 
 main {
     display: inline-block;
@@ -84,16 +81,23 @@ h3 {
     font-weight: normal;
 }
 
-section article {
+.collapse article{
+    display: none;
+}
+
+.uncollapse article {
     display: inline-block;
+}
+section article {
     width: 45%;
     margin: 1em 1em;
     width: inherit;
 }
 
-section article.artsect1 {
-    width: 46%;
+.articlesection1 {
+    width: 45%;
     vertical-align: top;
+    display: inline-block;
 }
 
 p {
@@ -116,6 +120,10 @@ button {
     text-transform: uppercase;
 }
 
-.cache { // Pour que ça déroule
+/*.cache {
     display: none;
+}*/
+
+.affiche {
+    display: inline-block;
 }
